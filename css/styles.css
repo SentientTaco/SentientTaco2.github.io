@@ -2,7 +2,7 @@
 
 /* Style for body specifies a background color */
 body {
-	Background-color: #FFFFFF;
+	Background-color: #1D1D1C;
 }
 
 /* Style to create a fluid image */
@@ -342,7 +342,7 @@ main p {
 
 /* Style applies color to h1 element */
 h1 {
-	color: #FFFFFF;
+	color: #000000;
 }
 
 /* Style applies height and opacity tp images within figure element */
