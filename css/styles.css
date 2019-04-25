@@ -75,6 +75,10 @@ nav li a {
 	display: none;
 }
 
+.center {
+	text-align: center;
+}
+
 /* Style for the main element specifies a block display, text properties, margins, padding, rounded corners, and border properties */
 main {
 	display: block;
