@@ -29,6 +29,27 @@ img {
 	margin-right: auto;
 }
 
+#page1, #page2 {
+	background-color: #fecc6f;
+	padding: 5px;
+	width: 100%;
+}
+	
+#page2 {
+	height: 100%;
+	width: 100%;
+}
+
+#answer {
+	border: 12px double #fff;
+	color: #523620;
+	text-align: left;
+	padding: 20px;
+	margin: 0px auto 10px auto;
+	width: 150px;
+	text-align: center;
+}
+
 /* Style for the header specifies top margin, background color, rounded corners, and center-aligns content */
 header {
 	text-align: center;
@@ -385,8 +406,6 @@ footer {
 /* Style specifies color and left margin for the section element */
 section {
 	color: #FFFFFF;
-	margin-left: 1em;
-	margin-bottom: 5em;
 }
 
 /* Style for anchor element within the section element */
