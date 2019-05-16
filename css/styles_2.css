@@ -10,6 +10,13 @@ img {
 	max-width: 100%;
 }
 
+#page {
+  background-color: #403c3b;
+  margin: 0 auto 0 auto;
+  position: relative;
+  text-align: center;}
+  /* Responsive page rules at bottom of style sheet */
+
 h1 {
   background-image: url(../images/kinglogo.png);
   background-repeat: no-repeat;
@@ -29,6 +36,7 @@ h2 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: .3em;
+  display: inline-block;
   margin: 0 0 23px 0;}
 
 h2 span {
@@ -44,64 +52,108 @@ h2 span {
   height: 22px;
   width: 26px;
   padding: 4px 0 0 0;}
+  
+/* style for container centers the page and sets the element width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-#page {
-  background-color: #403c3b;
-  margin: 0 auto 0 auto;}
+#page1, #page2 {
+	background-color: #fecc6f;
+	padding: 5px;
+	width: 100%;
+}
+	
+#page2 {
+	height: 100%;
+	width: 100%;
+}
 
-#message {
-	float: left;
-	clear: left;
-	background-color: #ffb87a;
-	color: #1e1b1e;
-	width: 170px;
-	padding: 18px 30px;
+#answer {
+	border: 12px double #fff;
+	color: #523620;
+	text-align: left;
+	padding: 20px;
+	margin: 0px auto 10px auto;
+	width: 150px;
 	text-align: center;
 }
 
-/* Additional styles for position example */
-#slideAd {
-  width: 130px;
-  height: 60px;
-  background-color: #403c3b;
-  background-image: url('../images/adverlion.png');
-  background-repeat: no-repeat;
-  background-position: 10px center;
+
+/* Form styles */
+
+form {
+  padding: 0 60px 65px 60px;}
+
+label {
   color: #fff;
-  border-top: 1px solid #fff;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: 25px 20px 10px 85px;
-  position: fixed;
-  bottom: 20px;
-  right: -235px;
+  display: block;
+  margin: 10px 0 10px 0;
+  font-size: 24px;}
+
+input[type='text'], input[type='password'], textarea {
+  background-color: #999;
+  color: #666;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  font-size: 24px;
+  width: 96%;
+  padding: 4px 6px;
+  border: 1px solid #999;
+  border-radius: 8px;}
+
+input[type='text']:focus, input[type='password']:focus, textarea:focus {
+  border: 1px solid #fff;
+  background-color: #fff;
+  outline: none;}
+
+input[type='submit'], a.add {
+  background-color: #cb6868;
+  color: #f3dad1;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 10px;
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
   text-transform: uppercase;}
-  
-  a.show{
-  font-size: 12px; 
-  padding: 5px; 
-  letter-spacing: 0; 
+
+input[type='submit']:hover, a.add:hover {
+  background-color: #d75359;
+  color: #f3dad1;
+  cursor: pointer;
+  box-shadow: none;
   position: relative;
-  top: -5px;
-  left: 10px;}
+  top: 1px;}
 
-/* form example */
-#newItemButton {padding: 10px 20px 75px 20px; display: none;}
-#newItemForm {padding-top: 20px;}
-#itemDescription {width: 360px;}
-#newItemForm input[type='submit'] {margin-top: 0; text-align: left;}
+ul {
+  border:none;
+  padding: 0;
+  margin: 0;}
 
-/* Attributes example */
-#group {
-  margin: 10px;
-  border: 2px solid #fff;}
+li {
+  background-color: #ec8b68;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: .05em;
+  list-style-type: none;
+  text-shadow: 2px 2px 1px #9f593f;
+  text-align: left;
+  height: 50px;
+  padding-left: 1em;
+  padding-top: 10px;}
 
-/* Events object */
-.date, li i {
-  font-size: 12px;
-  padding-left: 8px;}
-  
-  li.complete a {
+li a {
+  color: #fff;
+  background-image: url('../images/icon-link.png');
+  background-position: right, center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  padding-right: 36px;}
+
+li.complete a {
   background-image: none;}
 
 p {
@@ -237,157 +289,53 @@ label.checkbox {
 /* Link to show list */
 h2 a {
   font-size: 12px; }
-  
-  h2 span {
-  background-color: #fff;
-  color: #000;
-  font-size: 12px;
-  text-align: center;
-  letter-spacing: 0;
-  display: inline-block;
+
+a.show{
+  font-size: 12px; 
+  padding: 5px; 
+  letter-spacing: 0; 
   position: relative;
-  border-radius: 50%;
   top: -5px;
-  height: 22px;
-  width: 26px;
-  padding: 4px 0 0 0;}
-  
-  
+  left: 10px;}
 
-/* Styles for Mobile Layout */
+/* form example */
+#newItemButton {padding: 10px 20px 75px 20px; display: none;}
+#newItemForm {padding-top: 20px;}
+#itemDescription {width: 360px;}
+#newItemForm input[type='submit'] {margin-top: 0; text-align: left;}
 
-/* style for container centers the page and sets the element width */
-#container {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
+/* Attributes example */
+#group {
+  margin: 10px;
+  border: 2px solid #fff;}
 
-#page1, #page2 {
-	background-color: #fecc6f;
-	padding: 5px;
-	width: 100%;
-}
-	
-#page2 {
-	height: 100%;
-	width: 100%;
-}
+/* Events object */
+.date, li i {
+  font-size: 12px;
+  padding-left: 8px;}
 
-#answer {
-	border: 12px double #fff;
-	color: #523620;
-	text-align: left;
-	padding: 20px;
-	margin: 0px auto 10px auto;
-	width: 150px;
-	text-align: center;
-}
 
-li.complete a {
-  background-image: none;}
-
-p {
-  background-color: #7f675c;
-  color: #e3dfdd; 
-  padding: 10px;
-  margin: 20px auto;
-  min-width: 20%; 
-  max-width: 80%; 
-  border-radius: 5px;
-  text-align: center;
-  text-shadow: -1px 1px 0 #333;
-  -webkit-box-shadow: inset 1px -1px 0 0 #a5948c;
-  box-shadow: inset 1px -1px 0 0 #a5948c;}
-
-.hot {
-  background-color: #d7666b;
-  color: #fff;
-  text-shadow: 2px 2px 1px #914141;
-  border-top: 1px solid #e99295;
-  border-bottom: 1px solid #914141;}
-
-.cool {
-  background-color: #6cc0ac;
-  color: #fff;
-  text-shadow: 2px 2px 1px #3b6a5e;
-  border-top: 1px solid #7ee0c9;
-  border-bottom: 1px solid #3b6a5e;}
-
-.complete {
-  background-color: #999;
-  color: #fff;
-  background-image: url("../images/icon-trash.png");
-  background-position: right, center;
+/* Additional styles for position example */
+#slideAd {
+  width: 130px;
+  height: 60px;
+  background-color: #403c3b;
+  background-image: url('../images/adverlion.png');
   background-repeat: no-repeat;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #b0b0b0;
-  text-shadow: 2px 2px 1px #333;}
-
-.complete a {display:block;}
-
-
-/* Form styles */
-
-form {
-  padding: 0 60px 65px 60px;}
-
-label {
+  background-position: 10px center;
   color: #fff;
-  display: block;
-  margin: 10px 0 10px 0;
-  font-size: 24px;}
-
-input[type='text'], input[type='password'], textarea {
-  background-color: #999;
-  color: #666;
-  font-family: 'Oswald', 'Futura', sans-serif;
-  font-size: 24px;
-  width: 96%;
-  padding: 4px 6px;
-  border: 1px solid #999;
-  border-radius: 8px;}
-
-input[type='text']:focus, input[type='password']:focus, textarea:focus {
-  border: 1px solid #fff;
-  background-color: #fff;
-  outline: none;}
-
-input[type='submit'], a.add {
-  background-color: #cb6868;
-  color: #f3dad1;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 10px;
-  margin-top: 10px;
-  float: right;
-  font-size: 18px;
-  text-decoration: none;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 25px 20px 10px 85px;
+  position: fixed;
+  bottom: 20px;
+  right: -235px;
   text-transform: uppercase;}
 
-input[type='submit']:hover, a.add:hover {
-  background-color: #d75359;
-  color: #f3dad1;
-  cursor: pointer;
-  box-shadow: none;
-  position: relative;
-  top: 1px;}
-
-textarea {
-  width: 96%;
-  height: 5em;
-  line-height: 1.4em;}
-
-select, option {
-  font-size: 16px;}
-
-
-#feedback, #termsHint {
-  color: #fff;
-  background-image: url('../images/warning.png');
-  background-repeat: no-repeat;
-  background-position: 2px 14px;
-  padding: 10px 0 0 22px;}
+#footer {
+  background:none;
+  color: #fff;}
 
 #feedback.warning {background-image: url('../images/warning.png');}
 #feedback.tip {background-image: url('../images/tip.png');}
