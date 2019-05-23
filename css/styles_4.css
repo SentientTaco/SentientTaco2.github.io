@@ -1,0 +1,778 @@
+/* Style sheet created by: Tavish S Beals*/
+
+/* Style for body specifies a background color */
+body {
+  background-color: #fff;
+  color: #666;
+  font-family: 'Open Sans', arial, sans-serif;
+  width: 960px;
+  margin: 0 auto 0 auto;}
+  
+/* Style to create a fluid image */
+img {
+	max-width: 100%;
+}
+
+h1 {
+  background-image: url(../images/kinglogo.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  text-indent: -1000%;
+  height: 75px;
+  line-height: 75px;
+  width: 117px;
+  margin: 0 auto 0 auto;
+  padding: 30px 10px 20px 10px;}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  margin: 0 0 23px 0;}
+
+h2 span {
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  top: -5px;
+  height: 22px;
+  width: 26px;
+  padding: 4px 0 0 0;}
+  
+  /* Structure */
+#content {
+  clear: both;
+  margin-top: 10px;}
+.third {
+  width: 320px;
+  float: left;}
+.two-thirds {
+  width: 640px;
+  float: left;}
+
+p {margin-top: 0;}
+
+
+
+/* Forms */
+form {
+  margin: 0;
+  font-size: 160%;}
+
+.third form {width: 90%;}
+
+label {
+  float: left; 
+  width: 6em;
+  margin-top: 10px;}
+
+input, textarea {
+  border-radius: 3px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #efefef;
+  font-size: 100%;
+  width: 100%;
+  padding: 0.3em 0.5em 0.3em 0.5em;}
+
+textarea {
+  height: 5em;
+  line-height: 1.4em;}
+
+input[type=submit] {
+  background-color: #1fb684;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  width: auto;
+  clear:left;
+  float: right;
+  padding: 0.3em 0.5em 0.3em 0.5em;
+  margin: 0.5em 0 0 0;}
+
+input[type=submit]:hover {
+  background-color: #000;
+  cursor: pointer;}
+
+#loc {padding-top: 2em;}
+#container {line-height: 1.6em; margin: 2em 6em 3em 6em;}
+#price-range .ui-slider-handle {z-index: 1;}
+
+
+
+/* Basic AngularJS example */
+.welcome {width: 90%;}
+.postcard {
+  font-family: arial;
+  width: 640px;
+  height: 420px;
+  background-image: url(../img/postcard.png);
+  float: left;}
+p, .postcard div {overflow: hidden;}
+.postcard div {
+  width: 290px; 
+  height: 1.4em;
+  margin: 210px 0 0 290px;
+  font-family: oswald, sans-serif;
+  font-weight: bold;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  color: #1eb685;}
+.postcard p {
+  width: 290px;
+  font-size: 1.3em;
+  height: 5em;
+  overflow: auto;
+  font-family: oswald, sans-serif;
+  color: #1eb685;
+  margin: 10px 0 10px 290px;}
+
+
+/* Angular external data */
+table {margin-top: 3em;}
+#timetable table { margin-top: 0; }
+th {
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 1px solid #999;
+  font-size: 120%;}
+td {
+  font-size: 100%;
+  padding: 0 1em 1em 0;
+  vertical-align: top;}
+table.ng-scope th:nth-child(2) {
+  min-width: 11em;}
+
+/* Styles for Mobile Layout */
+
+/* style for container centers the page and sets the element width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page1, #page2 {
+	background-color: #fecc6f;
+	padding: 5px;
+	width: 100%;
+}
+	
+#page2 {
+	height: 100%;
+	width: 100%;
+}
+
+#answer {
+	border: 12px double #fff;
+	color: #523620;
+	text-align: left;
+	padding: 20px;
+	margin: 0px auto 10px auto;
+	width: 150px;
+	text-align: center;
+}
+
+li.complete a {
+  background-image: none;}
+
+p {
+  background-color: #7f675c;
+  color: #e3dfdd; 
+  padding: 10px;
+  margin: 20px auto;
+  min-width: 20%; 
+  max-width: 80%; 
+  border-radius: 5px;
+  text-align: center;
+  text-shadow: -1px 1px 0 #333;
+  -webkit-box-shadow: inset 1px -1px 0 0 #a5948c;
+  box-shadow: inset 1px -1px 0 0 #a5948c;}
+
+.hot {
+  background-color: #d7666b;
+  color: #fff;
+  text-shadow: 2px 2px 1px #914141;
+  border-top: 1px solid #e99295;
+  border-bottom: 1px solid #914141;}
+
+.cool {
+  background-color: #6cc0ac;
+  color: #fff;
+  text-shadow: 2px 2px 1px #3b6a5e;
+  border-top: 1px solid #7ee0c9;
+  border-bottom: 1px solid #3b6a5e;}
+
+.complete {
+  background-color: #999;
+  color: #fff;
+  background-image: url("../images/icon-trash.png");
+  background-position: right, center;
+  background-repeat: no-repeat;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #b0b0b0;
+  text-shadow: 2px 2px 1px #333;}
+
+.complete a {display:block;}
+
+
+/* Form styles */
+
+form {
+  padding: 0 60px 65px 60px;}
+
+label {
+  color: #fff;
+  display: block;
+  margin: 10px 0 10px 0;
+  font-size: 24px;}
+
+input[type='text'], input[type='password'], textarea {
+  background-color: #999;
+  color: #666;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  font-size: 24px;
+  width: 96%;
+  padding: 4px 6px;
+  border: 1px solid #999;
+  border-radius: 8px;}
+
+input[type='text']:focus, input[type='password']:focus, textarea:focus {
+  border: 1px solid #fff;
+  background-color: #fff;
+  outline: none;}
+
+input[type='submit'], a.add {
+  background-color: #cb6868;
+  color: #f3dad1;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 10px;
+  margin-top: 10px;
+  float: right;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;}
+
+input[type='submit']:hover, a.add:hover {
+  background-color: #d75359;
+  color: #f3dad1;
+  cursor: pointer;
+  box-shadow: none;
+  position: relative;
+  top: 1px;}
+
+textarea {
+  width: 96%;
+  height: 5em;
+  line-height: 1.4em;}
+
+select, option {
+  font-size: 16px;}
+
+
+#feedback, #termsHint {
+  color: #fff;
+  background-image: url('../images/warning.png');
+  background-repeat: no-repeat;
+  background-position: 2px 14px;
+  padding: 10px 0 0 22px;}
+
+#feedback.warning {background-image: url('../images/warning.png');}
+#feedback.tip {background-image: url('../images/tip.png');}
+
+#packageHint {
+  color: #fff;
+  background-image: url('../images/hint.png');
+  background-repeat: no-repeat;
+  background-position: 2px 5px;
+  padding-left: 22px;}
+
+.selectbox {
+  display: inline;}
+
+.checkbox {
+  display: inline;
+  font-size: 16px;}
+
+/* Click event example - note style */
+#note {
+  color: #fff;
+  background-color: #000;
+  opacity: 0.9;
+  box-shadow: -3px 3px 6px #000;
+  padding: 1em 1em 2em 1em;
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  top: 1em;
+  left: 0;}
+
+#note .header + div {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  text-align: center;
+  top: 1px;
+  color: #d7666b;
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid #d7666b;}
+
+#note h2 {
+  color: #d7666b;
+  padding-top: 20px;
+  padding-bottom: 20px;}
+
+#note a {
+  text-decoration: none;
+  color: #fff;}
+
+#note .header {
+  text-align: right;
+  background-color: #000;
+  border: none;
+  padding: 0 0 0 10px;}
+
+.shown {
+  visibility: visible;}
+
+.hidden {
+  visibility: hidden;}
+
+
+/* Position Example */
+#stats {
+  background-color: #6cc0ac;
+  color: #ffffff; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  padding: 20px; 
+  width: 100%;}
+
+#stats input[type="text"] {
+  width: 80px;
+  margin: 0 10px 0 10px;
+  background-color: #fff;
+  border-color: #fff;}
+
+#body #page {margin-top: 130px;}
+
+.divider {
+  margin: 0 40px; 
+  border-left: 1px solid #fff; 
+  border-right: 1px solid #fff; 
+  color: #6cc0ac;}
+
+
+/* Character Counter */
+#charactersLeft {
+  color: #fff;
+  font-size: 24px;}
+#lastKey {
+  color: #fff;
+  margin-top: 10px;}
+
+#packageHint, #termsHint {
+  color: #fff;
+  text-shadow: -1px 1px 2px #000;}
+
+#terms {
+  margin-top: 30px;}
+
+#list, #list2 {
+  margin-bottom: 10px;}
+div.button {
+  height: 65px;
+  padding-right: 10px;}
+
+a[data-state='stop'] {background-image: url('../images/pause.png');}
+a[data-state='record'] {background-image: url('../images/record.png');}
+#buttons {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;}
+#buttons a {
+  width: 100px;
+  height: 100px; 
+  text-indent: 100%;
+  margin-top: 20px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;}
+
+header {
+	text-align: center;
+}
+
+nav {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -1.5em;
+}
+	
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+	
+nav li {
+	background-color: #9D9D93;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.mobile {
+	display: inline;
+}
+
+.desktop {
+	display: none;
+}
+
+.center {
+	text-align: center;
+}
+
+main {
+	display: block;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1em;
+	margin-top: 0.5em;
+	padding: 1em;
+	border-radius: 2em 0 2em 0;
+	background-color: #FFFFFF;
+	opacity: 0.85;
+}
+
+main a {
+	background-color: #9D9D93;
+	border-radius: 1em;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+}
+
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+	color: #FFFFFF;
+}
+
+footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.tablet {
+	display: none;
+}
+
+.equip {
+	display: none;
+}
+
+aside {
+	font-style: italic;
+}
+
+/* Media query for tablet viewport targets screen size with a minimum width of 660px. */
+
+@media only screen and (min-width: 660px) {
+	
+/* Style specifies a horizontal display for navigation links */
+nav li {
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding-left: 0%;
+	padding-right: 0%;
+	width: 18%;
+	white-space: nowrap;
+	border-radius: 0;
+	background-color: transparent;
+}
+
+/* Style specifies clear and top margin properties for the main element */
+main {
+	clear: left;
+	margin-top: -0.3em;
+	border-radius: 0;
+	overflow: auto;
+}
+
+/* Style specifies to hide the mobile class */
+.mobile {
+	display: none;
+}
+
+/* Style specifies to display the desktop calss */
+.desktop {
+	display: inline;
+}
+
+/* Style specifies a display, float, and padding for the equip class */
+.equip {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+/* Style specifies a display, list style position, and bottom margin for the item class */
+.items {
+	display: block;
+	list-style-position: inside;
+}
+
+/* Style specifies to display the tablet class */
+.tablet {
+	display: block;
+	margin-top: -3em;
+	margin-bottom: -1em;
+}
+
+/* Styles specifies a font weight and top margin for description list terms */
+dt {
+	font-weight: bold;
+	margin-top: 0.7em;
+}
+
+/* Style for h1 element */
+h1 {
+	text-align: center;
+}
+
+/* Style for images within the figure element */
+figure img {
+	background-color: #1D1D1C;
+	display: inline;
+	height: 8em;
+	width: 28%;
+	margin: 1%;
+	padding: 1%;
+}
+
+/* Style for anchor elements within the figure elements */
+figure a {
+	background-color: transparent;
+	padding: 0;
+	text-decoration: none;
+}
+
+/* Style specificies bottom padding for the section element */
+section {
+	padding-bottom: 3em;
+}
+
+/* Style for h1 element within the section element */
+section h1 {
+	text-align: left;
+}
+
+/* Style for anchor element within the section element */
+section a {
+	background-color: transparent;
+	color: #1D1D1C;
+	font-weight: normal;
+	padding: 0;
+	text-decoration: underline;
+}
+
+/* Style for contact class */
+.contact {
+	background-color: transparent;
+	color: #1D1D1C;
+	padding: 0;
+	text-decoration: underline;
+}
+
+/* Style for article element */
+article {
+	background-color: #C1D9CA;
+	float: left;
+	margin: 0.5%;
+	padding: 0.5%;
+	text-align: center;
+	width: 31%;
+}
+
+/* Style for image element contained within the main article element */
+main article img {
+	border: solid 0.1em #1D1D1C;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for paragraph element contained within the main article element */
+main article P {
+	color: #000000;
+	margin-top: 2%;
+	padding: 1%;
+	text-align: left;
+}
+
+/* Style for unordered list element contained within the main article element */
+main article ul {
+	text-align: left;
+}
+
+/* Style for aside element */
+aside {
+	background-color: #FFFFFF;
+	border-radius: 0 5em 5em;
+	box-shadow: 1em 1em 1em #4C4F4D;
+	padding: 1.5em;
+	margin: 1em;
+}
+	
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 830pxpx. */
+
+@media only screen and (min-width: 830px) {
+	
+/* Style specifies a width for container */
+#container {
+	background-color: #1D1D1C;
+}
+
+/* Style to left align header */
+header {
+	text-align: left;
+}
+
+/* Style for nav specificies a float, margin, and width */
+nav {
+	float: right;
+	margin-top: -7em;
+	margin-right: 3em;
+	margin-bottom: 0;
+	width: 65%;
+}
+
+/* Style specifies margin and padding for the unordered list within the nav */
+nav ul {
+	margin: 0;
+	padding-left: 0.50%;
+	padding-right: 0.50%;
+}
+
+/* Style for navigation list items specifies a border radius, border, margin, and padding */
+nav li {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	width: 20%;
+}
+
+/* Style for navigation links specificies display and padding */
+navi li a {
+	display: inline-block;
+	padding: 0.7em;
+	text-shadow: 0.2em 0.1em #3D3D35;
+}
+
+/* Style rule for pseudo-classes */
+nav li a:link {
+	color: #FFFFFF;
+}
+
+nav li a:visited {
+	color: #CCCCFF;
+}
+
+nav li a:hover {
+	color: #9D9D93;
+	font-style: italic;
+}
+ 
+/* Style specifies border, shadow, margin, and padding for main elements */
+main {
+	background-color: #FFFFFF;
+}
+
+/* Style specifies left and right padding for paragraph elements within the main elements */
+main p {
+	color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+/* Style applies height and opacity tp images within figure element */
+figure img {
+	height: 15em;
+	opacity: 0.7;
+}
+
+/* Style removes transparentency on hover */
+figure img:hover {
+	opacity: 1;
+}
+
+/* Style specifies a gradient for the body element */
+body {
+	background-color: #FFFFFF;
+}
+
+/* Style specifies a background color, margin, and padding for footer element */
+footer {
+	background-color: #2A2A2A;
+	margin-top: -0.2em;
+	padding: 2em;
+}
+
+/* Style specifies color and left margin for the section element */
+section {
+	color: #FFFFFF;
+}
+
+/* Style for anchor element within the section element */
+section a {
+	color: #FFFFFF;
+}
+
+/* Style for paragraph within the section element */
+section p {
+	margin-left: 0;
+}
+
+/* Style for main h2 element */
+main h2 {
+	color: #FFFFFF;
+}
+
+/* Style for contact class */
+.contact {
+	color: #FFFFFF;
+}
+
+/* Style for main article h2 element */
+main article h2 {
+	color: #000000;
+}
+
+}
