@@ -2,7 +2,8 @@
 <!-- This website template was created by: Tavish S. Beals -->
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles_4.css">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" >
 	<title>Bla Bla Bla</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,39 +21,36 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="chapter5-6.html">Chapter 5-6</a></li>
 			<li><a href="chapter6-7.html">Chapter 7-8</a></li>
-			<li><a href="chapter9-10.html">Chapter 9-10</a></li>
 		</ul>
 	</nav>
 		
 	<main>
 
 		<body>
-			<div id="page">
-			  <h2>New Account</h2>
-				  <form method="post" action= "index.html">
-
-					<label for="username">Create a username: </label>
-					<input type="text" id="username" /><div id="feedback"></div>
-
-					<label for="password">Create a password: </label>
-					<input type="password" id="password" />
-
-					<input type="submit" value="sign up" />
-
-				  </form>
-			</div>
-			<script src="js/click.js"></script>
-			<script src="js/event-handler.js"></script>
+		<div class="two-thirds">
+		  <form>
+			<p id="price">
+			  <label for="amount">Price range:</label>
+			  <input type="text" id="amount" />
+			</p>
+			<div id="price-range"></div>
+			<p>
+			  <label for="arrival">Arrival date:</label>
+			  <input type="text" id="arrival" />
+			</p>
+			<input type="submit" value="Find a hotel" />
+		  </form>
+		</div>
+			<script src="js/jquery-1.11.0.min.js"></script>
+			<script src="js/jquery-ui.js"></script>
+			<script src="js/form-init.js"></script>
 		</body>
 			
-		</div>
 	</main>
 	
 	<footer>
 	
 	</footer>
-	
-	</div>
 	
 </body>
 </html>
