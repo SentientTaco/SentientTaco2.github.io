@@ -2,14 +2,14 @@
 <!-- This website template was created by: Tavish S. Beals -->
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/styles_4.css">
-	<link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" >
+	<link rel="stylesheet" href="css/styles_6.css">
+	<link rel="stylesheet" href="css/jquery.nouislider.css" type="text/css" />
 	<title>Bla Bla Bla</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
 
+<body>
 	<div id="container">
 	
 	<header>
@@ -26,30 +26,21 @@
 			<li><a href="chapter12.html">Chapter 12</a></li>
 		</ul>
 	</nav>
-		
-	<main>
-
-		<body>
-		<div class="two-thirds">
-		  <form>
-			<p id="price">
-			  <label for="amount">Price range:</label>
-			  <input type="text" id="amount" />
-			</p>
-			<div id="price-range"></div>
-			<p>
-			  <label for="arrival">Arrival date:</label>
-			  <input type="text" id="arrival" />
-			</p>
-			<input type="submit" value="Find a hotel" />
-		  </form>
-		</div>
-			<script src="js/jquery-1.11.0.min.js"></script>
-			<script src="js/jquery-ui.js"></script>
-			<script src="js/form-init.js"></script>
-		</body>
-			
-	</main>
+	</div>
+	<header>
+      <h1>Bla Bla Bla</h1>
+    </header>
+    <div id="price-range">
+      Min: <input type="text" id="value-min" />
+      Max: <input type="text" id="value-max" />
+      <div id="slider"></div>
+      <table id="rates"><thead><th>Bla</th><th>Hourly Bla</th></thead></table>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.nouislider.js"></script>
+    <script src="js/dynamic-filter.js"></script>
+	
+</body>
 	
 	<footer>
 	
