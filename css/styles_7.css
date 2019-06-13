@@ -137,8 +137,8 @@ textarea {
   top: -0.5em;}
 
 .hide {display: none;}
-.fail { background-image: url("../img/cross.png"); }
-.pass { background-image: url("../img/tick.png"); }
+.fail { background-image: url("../images/cross.png"); }
+.pass { background-image: url("../images/tick.png"); }
 .fail, .pass {
   background-repeat: no-repeat; 
   background-position: right center;}
@@ -151,7 +151,7 @@ span.error {
   display: block;
   padding-left: 20px;
   color: #FFFFFF;
-  background-image: url("../img/icon-warning.png");
+  background-image: url("../images/icon-warning.png");
   background-position: left 3px;
   background-repeat: no-repeat;}
 
